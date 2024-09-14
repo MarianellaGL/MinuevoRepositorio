@@ -12,31 +12,71 @@
     <div class="container">
         <form action="#" method="post" class="form">
             <h2>Formulario de Contacto</h2>
+            
+            <!-- Nombre y Apellido -->
             <div class="form-group">
-                <!-- Tarea 002 cambio de nombre a nombre y apellido  -->
                 <label for="nombre">Nombre y Apellido</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre y apellido" required>
             </div>
-
+            
+            <!-- Correo Electrónico -->
             <div class="form-group">
                 <label for="email">Correo Electrónico</label>
                 <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
             </div>
-
+            
+            <!-- Teléfono -->
             <div class="form-group">
                 <label for="telefono">Teléfono</label>
                 <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono">
             </div>
-
+            
+            <!-- Fecha de Nacimiento -->
+            <div class="form-group">
+                <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+            
+            <!-- DNI -->
+            <div class="form-group">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" placeholder="Ingresa tu DNI" required>
+            </div>
+            
+            <!-- Género -->
+            <div class="form-group">
+                <label for="genero">Género</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecciona tu género</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            
+            <!-- Motivo de Consulta -->
+            <div class="form-group">
+                <label for="motivo-consulta">Motivo de Consulta</label>
+                <select id="motivo-consulta" name="motivo-consulta" required>
+                    <option value="">Selecciona el motivo</option>
+                    <option value="soporte">Soporte Técnico</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="sugerencias">Sugerencias</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            
+            <!-- Mensaje -->
             <div class="form-group">
                 <label for="mensaje">Mensaje</label>
                 <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
             </div>
-
+            
+            <!-- Botón Enviar -->
             <div class="form-group">
                 <button type="submit" class="submit-btn">Enviar</button>
             </div>
-
+            
         </form>
     </div>
 </body>
