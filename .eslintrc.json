@@ -1,0 +1,11 @@
+{
+    "plugin":"prettier/recommended",
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+       "prettier/prettier": [ "error", { "semi": false, "singleQuote": true } ]
+    }
+}
